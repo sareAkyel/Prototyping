@@ -1,0 +1,59 @@
+*{margin:0;
+    padding: 0;
+}
+
+
+/* Navbar stilini belirle */
+.navbar {
+    
+    background-color: red; /* Arkaplan rengi kırmızı */
+    padding: 10px ; /* Yatay ve dikey iç boşluk ayarı */
+}
+
+/* Navbar linklerini stilini belirle */
+.navbar ul {
+    list-style-type: none; /* Madde işaretini kaldır */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline; /* Linkleri yan yana göster */
+    margin-right: 20px; /* Linkler arasında sağ boşluk bırak */
+}
+
+.navbar a {
+    text-decoration: none; /* Link altı çizgisini kaldır */
+    color: white; /* Yazı rengi beyaz */
+    font-weight: bold; /* Yazı kalın */
+}
+
+/* Linklere hover (üzerine gelindiğinde) stilini belirle */
+.navbar a:hover {
+    text-decoration: underline; /* Linki altı çizgiyle belirt */
+    color: yellow; /* Yazı rengini sarı yap */
+}
+/* İlk arka plan resmi */
+.background-left {
+    width: 50%; /* Sol taraftaki resmin yüzde 50'sini kaplasın */
+    height: 100vh; /* Ekran yüksekliği kadar yükseklik */
+    background-image: url('../image/løpendeMan.png'); /* Sol arka plan resmi dosya yolunu buraya ekleyin */
+    background-size: cover; /* Resmi kaplamak için */
+    float: left; /* Sol tarafta yer alacak */
+}
+
+/* İkinci arka plan resmi */
+.background-right {
+    margin-top: 10em;
+    width: 5%; /* Sağ taraftaki resmin yüzde 50'sini kaplasın */
+    height: 10vh; /* Ekran yüksekliği kadar yükseklik */
+    background-image: url('../image/grønnsaker.png'); /* Sağ arka plan resmi dosya yolunu buraya ekleyin */
+    background-size: cover; /* Resmi kaplamak için */
+    float: left; /* Sağ tarafta yer alacak */
+}
+
+/* Ana konteyneri stilleyin */
+.background-container {
+    width: 100%; /* Tam genişlik */
+    overflow: hidden; /* Taşan içerikleri gizlemek için */
+}
