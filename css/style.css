@@ -47,19 +47,13 @@
 
 .middle-text {
     text-align: left; 
-    /* position: absolute; 
-    top: 0; 
-    left: 0;  */
     font-size: 1rem; 
     color: black; 
-    /* padding: 20px;  */
-    /* border: 1px solid black;  */
     width: 50%; 
-    /* background-color: rgba(255, 255, 255, 0.8); */
     display: flex;
-    justify-content: center; /* Yatayda merkezleme */
-    align-items: center;     /* Dikeyde merkezleme */
-    /* height: 50%; */
+    justify-content: center; 
+    align-items: center;     
+    
 }
 
 
@@ -69,12 +63,12 @@
     margin: 0 auto;
     padding: 20px; 
     border: 2px solid #000; 
-    background-color: #f5f5f5; /* Çerçeve arka plan rengi */
+    background-color: #f5f5f5; 
 }
 
 .bullet {
-    color: black; /* Nokta rengi */
-    margin-right: 5px; /* Noktadan sonra bir boşluk bırak */
+    color: black; 
+    margin-right: 5px; 
 }
 
 
@@ -137,22 +131,22 @@
 
 .login-buttons {
     text-align: center; 
-    margin-top: 20px; /* Düğmeler arasına boşluk bırak */
+    margin-top: 20px; 
 }
 
 .login-button,
 .register-button {
     padding: 10px 20px; 
     margin: 5px; 
-    background-color: red; /* Arkaplan rengi (örnek olarak mavi) */
-    color: white; /* Yazı rengi */
-    border: none; /* Kenarlık yok */
-    cursor: pointer; /* El işareti cursor */
+    background-color: red; 
+    color: white; 
+    border: none;
+    cursor: pointer; 
 }
 
 .login-button:hover,
 .register-button:hover {
-    background-color: yellow; /* Düğme üzerine gelindiğinde arkaplan rengi (örnek olarak koyu mavi) */
+    background-color: yellow; 
 }
 
 
