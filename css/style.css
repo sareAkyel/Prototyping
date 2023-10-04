@@ -3,57 +3,161 @@
 }
 
 
-/* Navbar stilini belirle */
 .navbar {
     
-    background-color: red; /* Arkaplan rengi kırmızı */
-    padding: 10px ; /* Yatay ve dikey iç boşluk ayarı */
+    background-color: red; 
+    padding: 10px ; 
 }
 
-/* Navbar linklerini stilini belirle */
+
 .navbar ul {
-    list-style-type: none; /* Madde işaretini kaldır */
-    margin: 0;
+    list-style-type: none; 
     padding: 0;
 }
 
 .navbar li {
-    display: inline; /* Linkleri yan yana göster */
-    margin-right: 20px; /* Linkler arasında sağ boşluk bırak */
+    display: inline; 
+    margin-right: 20px; 
 }
 
 .navbar a {
-    text-decoration: none; /* Link altı çizgisini kaldır */
-    color: white; /* Yazı rengi beyaz */
-    font-weight: bold; /* Yazı kalın */
+    text-decoration: none; 
+    color: white; 
+    font-weight: bold; 
 }
 
-/* Linklere hover (üzerine gelindiğinde) stilini belirle */
+
 .navbar a:hover {
-    text-decoration: underline; /* Linki altı çizgiyle belirt */
-    color: yellow; /* Yazı rengini sarı yap */
-}
-/* İlk arka plan resmi */
-.background-left {
-    width: 50%; /* Sol taraftaki resmin yüzde 50'sini kaplasın */
-    height: 100vh; /* Ekran yüksekliği kadar yükseklik */
-    background-image: url('../image/løpendeMan.png'); /* Sol arka plan resmi dosya yolunu buraya ekleyin */
-    background-size: cover; /* Resmi kaplamak için */
-    float: left; /* Sol tarafta yer alacak */
+    text-decoration: underline; 
+    color: yellow; 
 }
 
-/* İkinci arka plan resmi */
-.background-right {
-    margin-top: 10em;
-    width: 5%; /* Sağ taraftaki resmin yüzde 50'sini kaplasın */
-    height: 10vh; /* Ekran yüksekliği kadar yükseklik */
-    background-image: url('../image/grønnsaker.png'); /* Sağ arka plan resmi dosya yolunu buraya ekleyin */
-    background-size: cover; /* Resmi kaplamak için */
-    float: left; /* Sağ tarafta yer alacak */
+.image-left {
+    width: 50%;
+    float: left;
 }
 
-/* Ana konteyneri stilleyin */
+
+.image-right {
+    width: 50%;
+    float: left;
+}
+
+
+
+.middle-text {
+    text-align: left; 
+    /* position: absolute; 
+    top: 0; 
+    left: 0;  */
+    font-size: 1rem; 
+    color: black; 
+    /* padding: 20px;  */
+    /* border: 1px solid black;  */
+    width: 50%; 
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    display: flex;
+    justify-content: center; /* Yatayda merkezleme */
+    align-items: center;     /* Dikeyde merkezleme */
+    /* height: 50%; */
+}
+
+
+.frame {
+    text-align: justify; 
+    width: 70%; 
+    margin: 0 auto;
+    padding: 20px; 
+    border: 2px solid #000; 
+    background-color: #f5f5f5; /* Çerçeve arka plan rengi */
+}
+
+.bullet {
+    color: black; /* Nokta rengi */
+    margin-right: 5px; /* Noktadan sonra bir boşluk bırak */
+}
+
+
+
+
+.image-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.container{
+    position: relative;
+}
+
 .background-container {
-    width: 100%; /* Tam genişlik */
-    overflow: hidden; /* Taşan içerikleri gizlemek için */
+    width: 100%; 
+    overflow: hidden; 
 }
+
+.ansatte-person img {
+    width: 10%; 
+    height: auto; 
+    max-width: 10%; 
+}
+.ansatte {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+}
+
+.ansatte-person {
+    width: calc(33.33% - 20px); 
+    margin: 10px; 
+    text-align: center; 
+}
+
+
+.center-icon {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.center-icon img {
+    width: 40px;
+    height: auto;
+    background-color: red;
+    color: white;
+    padding: 5px;
+}
+
+.center-icon h2 {
+    margin-top: 5px; 
+    color: black; 
+}
+
+.login-buttons {
+    text-align: center; 
+    margin-top: 20px; /* Düğmeler arasına boşluk bırak */
+}
+
+.login-button,
+.register-button {
+    padding: 10px 20px; 
+    margin: 5px; 
+    background-color: red; /* Arkaplan rengi (örnek olarak mavi) */
+    color: white; /* Yazı rengi */
+    border: none; /* Kenarlık yok */
+    cursor: pointer; /* El işareti cursor */
+}
+
+.login-button:hover,
+.register-button:hover {
+    background-color: yellow; /* Düğme üzerine gelindiğinde arkaplan rengi (örnek olarak koyu mavi) */
+}
+
+
+
+
+
+
+
